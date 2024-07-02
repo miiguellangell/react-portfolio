@@ -6,6 +6,7 @@
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
+    --text-color-table:black;
 }
 
 [data-theme="light"] {
@@ -16,7 +17,9 @@
     --text-color-2: #000;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(255 255 255 / 70%);
+    --table-bg-color:grey;
 }
+
 
 html,
 body {
@@ -93,4 +96,9 @@ code {
 
 .color_sec {
     color: var(--secondary-color);
+}
+
+.logoMain{
+    width: 8%;
+    margin-right: 8px;
 }

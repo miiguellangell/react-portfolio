@@ -1,156 +1,222 @@
-const logotext = "JOHN";
+import imgProfile from './assets/images/profile.webp';
+import altra from './assets/images/portfolio/altra.webp';
+import contestpizz from './assets/images/portfolio/contestpizz.webp';
+import destinations from './assets/images/portfolio/destinations.webp';
+import ekologica from './assets/images/portfolio/ekologica.webp';
+import generatorlaravel from './assets/images/portfolio/generatorlaravel.webp';
+import havip from './assets/images/portfolio/havip.webp';
+import hilanderia from './assets/images/portfolio/hilanderia.webp';
+import innova from './assets/images/portfolio/innova.webp';
+import napco from './assets/images/portfolio/napco.webp';
+import shopify from './assets/images/portfolio/shopify.webp';
+import vehillanos from './assets/images/portfolio/vehillanos.webp';
+import wow from './assets/images/portfolio/wow.webp';
+
+const logotext = "MIGUEL ANGEL";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Miguel Angel Portfolio",
+    description: "I’m Miguel Carrera, a Systems Engineer, Web Developer, and Web Designer currently based in Bogotá, Colombia.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Miguel Carrera",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Software Engineer | Web developer | Web Designer | Student",
+        second: "I design innovative solutions",
+        third: "I develop scalable web applications",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I am a passionate Web Developer with over 5 years of experience in designing and developing innovative and scalable web solutions. I work from defining needs, designing prototypes, and solutions to applications focusing on companies, always prioritizing user experience (UX/UI), performance, and accessibility.",
+    your_img_url: imgProfile, // Correctly imported image
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A bit about myself",
+    aboutme: "I am a passionate Web Developer with over 5 years of experience in designing and developing innovative and scalable web solutions. I work from defining needs, designing prototypes, and solutions to applications focusing on companies, always prioritizing user experience (UX/UI), performance, and accessibility. My background includes multiple eCommerce and web development projects. Additionally, I have experience in developing online stores using Shopify and WordPress, as well as programming in PHP and SQL.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+
+const worktimeline = [
+    {
+        jobtitle: "Web Master",
+        where: "Gerscol",
+        date: "Jul. 2024 - Present",
+        url: 'https://aula.gerscol.com/',
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Web Master",
+        where: "Centro de Rehabilitación para Adultos Ciegos-CRAC",
+        date: "Feb. 2024 - Present",
+        url:'https://cracolombia.org/',
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Development Team Leader",
+        where: "PacoWEB S.A.S",
+        date: "Sep. 2020 - Sep. 2022",
+        url:'https://pacoweb.com.co/',
+    },
+    {
+        jobtitle: "Web Developer",
+        where: "Nap Colombia",
+        date: "Freelancer",
+        url:'https://www.nap.co/',
+    },
+    {
+        jobtitle: "Web Developer",
+        where: "Toyota Vehillanos S.A.S",
+        date: "Freelancer",
+        url:'https://vehillanos.com.co/',
+    },
+    {
+        jobtitle: "Web Developer",
+        where: "4k Group Latam",
+        date: "Jul. 2023 - abr. 2024",
+        url:'https://4kgrouplatam.com/',
+    },
+    {
+        jobtitle: "Web Developer",
+        where: "Statum Digital",
+        date: "FreeLancer",
+        url:'https://statumdigital.com/',
+    },
+    {
+        jobtitle: "Web Page Designer",
+        where: "Render Publicidad",
+        date: "Ago. 2018 - Mar. 2019",
+        url:'https://www.renderpublicidad.com.co/',
+    },
+    {
+        jobtitle: "Graphic Designer",
+        where: "TeshMark",
+        date: "Abr. 2018 - Ago. 2018",
+        url:'https://teshmark.com/',
     },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
+const skills = [
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
+        name: "Elementor",
         value: 80,
     },
     {
-        name: "React",
+        name: "WordPress",
+        value: 70,
+    },
+    {
+        name: "PHP/Laravel",
         value: 60,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "Linux",
+        value: 65,
+    },
+    {
+        name: "Illustrator",
+        value: 75,
+    },
+    {
+        name: "JavaScript",
+        value: "60",
+    },
+    {
+        name: "shopify",
+        value: "40",
     },
 ];
 
-const services = [{
+const services = [
+    {
         title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Design of user interfaces and user experiences (UX/UI), focused on usability and accessibility.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "E-commerce Development",
+        description: "Development of e-commerce solutions using Shopify and WordPress.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Development",
+        description: "Development of scalable and customized web applications to improve performance and accessibility.",
     },
 ];
+
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: altra,
+        description: "Wordpress + Elementor + Wireframe ",
+        link:'https://altradx.com/',
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: contestpizz,
+        description: "Laravel + front-end + Back-end",
+        link: 'https://app.cheerspizzeria.com/',
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: destinations,
+        description: "Wordpress + Elementor + Wireframe",
+        link: 'https://destinationscolombia.com/',
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: ekologica,
+        description: "Laravel + front-end + Back-end",
+        link: 'https://paekologica.com/public/login',
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: generatorlaravel,
+        description: "Laravel +DomPdf + front-end + Back-end",
+        link: 'https://certificados.gerscol.com/busqueda',
     },
     {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: havip,
+        description: "Real state + Wordpress + Elementor + Wireframe",
+        link: "https://havip.com.co/",
     },
 
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: hilanderia,
+        description: "Wordpress + Elementor + Wireframe",
+        link: 'https://www.hilanderiafontibon.com/',
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: innova,
+        description: "Wordpress + Elementor + Wireframe",
+        link: 'https://innova-atl.com/',
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: napco,
+        description: "Wordpress + Elementor + Wireframe",
+        link: 'https://www.nap.co/',
     },
     {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: shopify,
+        description: "Shopify + Liquid + Wireframe",
+        link: 'https://www.colorgy.co/',
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: vehillanos,
+        description: "Wordpress + Elementor + Wireframe + SalesForce Integration",
+        link: 'https://vehillanos.com.co/',
     },
     {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: wow,
+        description: "Wordpress + Elementor + Wireframe",
+        link: 'https://wowstudios.com.co/',
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "miiguellangellmc@gmail.com",
+    YOUR_FONE: "+57 302 4228 433",
+    description: "Software Engineer | Web developer | Web Designer | Student",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_ck4x48p",
+    YOUR_TEMPLATE_ID: "template_8e1mbdl",
+    YOUR_USER_ID: "_O8T83IqOdGl9DQJO",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/miiguellangell",
+    gitlab:"https://gitlab.com/miiguellangell/certificados-gerscol",
+    facebook: "https://web.facebook.com/miiguellangel/",
+    linkedin: "https://www.linkedin.com/in/miguel-carrera-02726b1ab/",
 };
 export {
     meta,

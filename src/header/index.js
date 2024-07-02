@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext ,socialprofils, } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import logo from '../assets/images/logoportfolio.png';
+
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -17,9 +19,11 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
+          <div><Link  className="navbar-brand nav_ac" to="/">
+            <img className="logoMain" src={logo} alt="Logo" />
+             {logotext}
+          </Link>  </div>
+
           <div className="d-flex align-items-center">
           <Themetoggle />
           <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -54,6 +58,8 @@ const Headermain = () => {
             <div className="d-flex">
             <a href={socialprofils.facebook}>Facebook</a>
             <a href={socialprofils.github}>Github</a>
+            <a href={socialprofils.gitlab}>Gitlab</a>
+            <a href={socialprofils.linkedin}>linkedin</a>
             <a href={socialprofils.twitter}>Twitter</a>
             </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
