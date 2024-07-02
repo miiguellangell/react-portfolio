@@ -4,11 +4,11 @@
 
 .table td,
 .table th {
-    color: var(--text-color);
+    color: var(--text-color-table);
 }
 
 .t_border {
-    border-color: var(--text-color) !important;
+    border-color: var(--text-color-table) !important;
 }
 
 .progress-title {

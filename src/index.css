@@ -6,7 +6,7 @@
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
-    --text-color-table:black;
+    --text-color-table:white;
 }
 
 [data-theme="light"] {
@@ -18,6 +18,7 @@
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(255 255 255 / 70%);
     --table-bg-color:grey;
+    --text-color-table:black;
 }
 
 
