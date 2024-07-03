@@ -127,7 +127,7 @@ const academy = [
         title: "Santiago Mariño Polytechnic University Institute",
         description: "Software Engineer",
         certificate:"",
-        logo:"http://www.psm.edu.ve/images/common/logo/logo_nuevo.png",
+        logo:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCtSSeSTpXNLHL-_IjggVGbCjQPErItf_z7IZiFdlAmsJWBrpag6baK_b8cVy_b0djkilmx-VmiBEx_RpFekD5WfDItiHG0c9ACPDxFvF3VGGM0CSKVbmL5OqA0zrv_5m5117mMUaDmCo/s1600-r/38396_136110556422067_100000693710214_212707_5390567_n.jpg",
     },
     {
         title: "Udemy",

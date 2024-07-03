@@ -48,7 +48,7 @@ export const About = () => {
                       <th scope="row">{data.jobtitle}</th>
                       <td>{data.where}</td>
                       <td>{data.date}</td>
-                      <td className="tablelink"  > <a href={data.url}  target="_blank" ><button  className="buttonlink"> <i  class="color_sec fa-solid fa-globe"></i></button></a></td>
+                      <td className="tablelink"> <a href={data.url}  target="_blank"><button  className="buttonlink"> <i  class="color_sec fa-solid fa-globe"></i></button></a></td>
                     </tr>
                   );
                 })}
@@ -91,7 +91,11 @@ export const About = () => {
                   <img src={data.logo}  alt="W3Schools.com" width="78" height="78"></img>
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.description}</h5>
-                  <p className="service_desc">{data.title}</p>
+                  <div className=""> 
+                      <p className="service_desc">{data.title}</p>
+                      <a href={data.certificate}  target="_blank" ><button id="button_p" className="ac_btn btn "> Ver certificado</button></a>
+                  </div>
+                 
                 </div>
                 </div>
 
