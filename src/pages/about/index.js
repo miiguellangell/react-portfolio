@@ -7,7 +7,7 @@ import {
   meta,
   worktimeline,
   skills,
-  services,
+  academy,
 } from "../../content_option";
 
 export const About = () => {
@@ -48,7 +48,7 @@ export const About = () => {
                       <th scope="row">{data.jobtitle}</th>
                       <td>{data.where}</td>
                       <td>{data.date}</td>
-                      <a href={data.url} target="_blank" >  <td><i  class="color_sec fa-solid fa-globe"></i></td></a>
+                      <td className="tablelink"  > <a href={data.url}  target="_blank" ><button  className="buttonlink"> <i  class="color_sec fa-solid fa-globe"></i></button></a></td>
                     </tr>
                   );
                 })}
@@ -82,15 +82,19 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Academy</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
+            {academy.map((data, i) => {
               return (
+                <div className="academycontainer" > 
+                  <img src={data.logo}  alt="W3Schools.com" width="78" height="78"></img>
                 <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
+                  <h5 className="service__title">{data.description}</h5>
+                  <p className="service_desc">{data.title}</p>
                 </div>
+                </div>
+
               );
             })}
           </Col>

@@ -122,20 +122,75 @@ const skills = [
     },
 ];
 
-const services = [
+const academy = [
     {
-        title: "UI & UX Design",
-        description: "Design of user interfaces and user experiences (UX/UI), focused on usability and accessibility.",
+        title: "Santiago Mariño Polytechnic University Institute",
+        description: "Software Engineer",
+        certificate:"",
+        logo:"http://www.psm.edu.ve/images/common/logo/logo_nuevo.png",
     },
     {
-        title: "E-commerce Development",
-        description: "Development of e-commerce solutions using Shopify and WordPress.",
+        title: "Udemy",
+        description: "Laravel course from scratch + RESTful APIs and Angular websites",
+        certificate:"",
+        logo:"https://rastcodes.com/images/icons/proficiency/laravel2.png",
     },
     {
-        title: "Web Development",
-        description: "Development of scalable and customized web applications to improve performance and accessibility.",
+        title: "Platzi Academy",
+        description: "JavaScript Closures and Scope Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/3213-javascript-closures-scope/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/badge-piezas-clousures-scope-javascript-af54a63d-00d6-42e3-96c3-731028480418.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Frameworks and Libraries of JavaScript Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/2239-frameworks-javascript/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/badge-introduccion-frameworks-javascript-72c0e3a6-a4e9-4d6d-a13a-a3f0bc17d607.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Development Environment Configuration in Windows Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/6900-configuracion-windows/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/piezas-prework-desarrollo-entornos-windows_badge-45dec17f-fe5f-47fb-b2c5-f36635b054.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Frontend Developer Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/2467-frontend-developer/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/badge-curso-frontend-developer-825407d1-49b1-4c9b-90c4-eee793720ede.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Introduction to Terminal and Command Line Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/2292-terminal/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/badge-terminal-5c5518b5-43d0-4387-b39e-3d85db446c5f.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Practical Frontend Developer Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/2477-frontend-developer-practico/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/badge-curso-practico-frontend-developer-d28c2eb0-cd3e-4951-bb96-5f1bcab2add5.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Intermediate English B1: Event Descriptions and Preferences Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/2391-conectores-preferencias/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/piezas-ingles-intermedio-b1-conectores-y-preferencias_badge-288a7868-fd49-4797-b433.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Professional Git and GitHub Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/1557-git-github/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png",
+    },
+    {
+        title: "Platzi Academy",
+        description: "Practical JavaScript Course",
+        certificate:"https://platzi.com/p/miiguellangell/curso/3271-javascript-practico/diploma/detalle/",
+        logo:"https://static.platzi.com/media/achievements/practico-javascript_badge-fb533fa5-73c8-4f75-9d81-0294d9013ab5.png",
     },
 ];
+
 
 
 const dataportfolio = [{
@@ -224,7 +279,7 @@ export {
     dataportfolio,
     worktimeline,
     skills,
-    services,
+    academy,
     introdata,
     contactConfig,
     socialprofils,

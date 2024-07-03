@@ -102,8 +102,20 @@ code {
     color: var(--primary-color) !important;
 }
 
-.color_sec {
-    color: var(--secondary-color);
+.buttonlink{
+border: solid 0px ;
+background-color: transparent;
+}
+
+.academycontainer{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.tablelink{
+    vertical-align: middle;
+    background-color: red;
 }
 
 .logoMain{
