@@ -50,7 +50,7 @@
 
 .br-top {
     top: 0;
-    height: 10px;
+    height: 0px;
     left: 0;
     width: 100%;
 }
@@ -58,7 +58,7 @@
 .br-bottom {
     bottom: 0;
     left: 0;
-    height: 10px;
+    height: 0px;
     width: 100%;
 }
 

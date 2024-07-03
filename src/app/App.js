@@ -10,6 +10,8 @@ import Headermain from "../header";
 import AnimatedCursor  from "../hooks/AnimatedCursor";
 import "./App.css";
 
+import ParticlesComponent from "../components/paticles";
+
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -22,6 +24,7 @@ const ScrollToTop = withRouter(_ScrollToTop);
 export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
+      <ParticlesComponent id="particles"/>
       <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}

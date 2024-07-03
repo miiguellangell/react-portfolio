@@ -4,7 +4,8 @@ import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils, } from "../content_option";
 import Themetoggle from "../components/themetoggle";
-import logo from '../assets/images/logoportfolio.png';
+import logoblanco from '../assets/images/logoblanco.svg';
+import logonegro from '../assets/images/logonegro.svg';
 
 
 const Headermain = () => {
@@ -19,8 +20,10 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <div><Link  className="navbar-brand nav_ac" to="/">
-            <img className="logoMain" src={logo} alt="Logo" />
+          <div><Link  className="logocontainer navbar-brand nav_ac" to="/">
+          
+            <div className="logo" > </div>
+           
              {logotext}
           </Link>  </div>
 

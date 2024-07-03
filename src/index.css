@@ -7,6 +7,10 @@
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
     --text-color-table:black;
+    --particles-color:#fff;
+    --url:url('./assets/images/logoblanco.svg')
+
+
 }
 
 [data-theme="light"] {
@@ -19,6 +23,9 @@
     --overlay-color: rgb(255 255 255 / 70%);
     --table-bg-color:grey;
     --text-color-table:black;
+    --particles-color:#000;
+    --url:url('./assets/images/logonegro.svg')
+
 }
 
 
@@ -100,6 +107,28 @@ code {
 }
 
 .logoMain{
-    width: 8%;
+    width: 10%;
     margin-right: 8px;
+}
+
+
+.logo{
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 60px; 
+    height: 60px;
+    background-image: var(--url);
+}
+  
+.logocontainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 900px) {
+    .logo{
+        width: 45px; 
+        height: 45px;
+    }
 }

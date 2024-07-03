@@ -48,7 +48,7 @@ export const About = () => {
                       <th scope="row">{data.jobtitle}</th>
                       <td>{data.where}</td>
                       <td>{data.date}</td>
-                      <td ><a href={data.url} target="_blank" > <i  class="fa-solid fa-globe"></i>URL</a></td>
+                      <a href={data.url} target="_blank" >  <td><i  class="color_sec fa-solid fa-globe"></i></td></a>
                     </tr>
                   );
                 })}

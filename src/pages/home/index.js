@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
+
 export const Home = () => {
   return (
     <HelmetProvider>
@@ -14,7 +15,7 @@ export const Home = () => {
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
+        <div id="large-header" className=" large-header intro_sec d-block d-lg-flex align-items-center ">
           <div
             className="h_bg-image order-1 order-lg-2 h-100 "
             style={{ backgroundImage: `url(${introdata.your_img_url})` }}

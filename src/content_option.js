@@ -26,7 +26,7 @@ const introdata = {
         third: "I develop scalable web applications",
     },
     description: "I am a passionate Web Developer with over 5 years of experience in designing and developing innovative and scalable web solutions. I work from defining needs, designing prototypes, and solutions to applications focusing on companies, always prioritizing user experience (UX/UI), performance, and accessibility.",
-    your_img_url: imgProfile, // Correctly imported image
+    your_img_url: imgProfile, 
 };
 
 const dataabout = {
