@@ -1,3 +1,4 @@
+import CursosComponent from '../../components/CursosComponent';
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -7,7 +8,6 @@ import {
   meta,
   worktimeline,
   skills,
-  academy,
 } from "../../content_option";
 
 export const About = () => {
@@ -85,22 +85,8 @@ export const About = () => {
             <h3 className="color_sec py-4">Academy</h3>
           </Col>
           <Col lg="7">
-            {academy.map((data, i) => {
-              return (
-                <div className="academycontainer" > 
-                  <img src={data.logo}  alt="W3Schools.com" width="78" height="78"></img>
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.description}</h5>
-                  <div className=""> 
-                      <p className="service_desc">{data.title}</p>
-                      <a href={data.certificate}  target="_blank" ><button id="button_p" className="ac_btn btn "> Ver certificado</button></a>
-                  </div>
-                 
-                </div>
-                </div>
-
-              );
-            })}
+          <CursosComponent />
+          
           </Col>
         </Row>
       </Container>
