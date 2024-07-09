@@ -4,7 +4,7 @@ function CursosComponent() {
   const [cursos, setCursos] = useState([]);
 
   useEffect(() => {
-    fetch('https://www.miguelangel.icu/wordpress/wp-json/api/cursos')
+    fetch('https://miguelangel.icu/wordpress/wp-json/api/cursos')
       .then(response => response.json())
       .then(data => setCursos(data))
       .catch(error => console.error('Error:', error));
