@@ -4,7 +4,7 @@ function CursosComponent() {
   const [cursos, setCursos] = useState([]);
 
   useEffect(() => {
-    fetch('https://www.miguelangel.icu/admin/wp-json/api/cursos')
+    fetch('https://www.miguelangel.icu/wordpress/wp-json/api/cursos')
       .then(response => response.json())
       .then(data => setCursos(data))
       .catch(error => console.error('Error:', error));
@@ -16,7 +16,7 @@ function CursosComponent() {
         cursos.map((curso) => (
           <div className="academycontainer" key={curso.id}>
             <img 
-              src={`https://www.miguelangel.icu/admin/wp-content/uploads/${curso.logo}`} 
+              src={curso.custom_fields.logo} 
               alt={curso.title.rendered} 
               width="78" 
               height="78" 
@@ -24,9 +24,9 @@ function CursosComponent() {
             <div className="service_ py-4">
               <h5 className="service__title">{curso.title.rendered}</h5>
               <div className=""> 
-                <p className="service_desc">{curso.academia || 'Academia no especificada'}</p>
+                <p className="service_desc">{curso.custom_fields.academia || 'Academia no especificada'}</p>
                 <a 
-                  href={curso.certificado} 
+                  href={curso.custom_fields.certificado} 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
