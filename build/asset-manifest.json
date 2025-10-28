@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2014dbdf.css",
+    "main.js": "/static/js/main.9569e8d4.js",
+    "static/media/profile.webp": "/static/media/profile.ef09e1bd0f7518a364cd.webp",
+    "static/media/wow.webp": "/static/media/wow.a3ea31979a650d1de1a4.webp",
+    "static/media/havip.webp": "/static/media/havip.cfbc9156d2d351f1f31c.webp",
+    "static/media/vehillanos.webp": "/static/media/vehillanos.c75c26f5b088ad1fa3bf.webp",
+    "static/media/destinations.webp": "/static/media/destinations.0597f2f501257e8570df.webp",
+    "static/media/hilanderia.webp": "/static/media/hilanderia.a1a84639ff811b2f878d.webp",
+    "static/media/generatorlaravel.webp": "/static/media/generatorlaravel.997c26ccdc427d3f4777.webp",
+    "static/media/altra.webp": "/static/media/altra.f980f3070afadd1fa79a.webp",
+    "static/media/innova.webp": "/static/media/innova.c5480f842b49c7e420eb.webp",
+    "static/media/napco.webp": "/static/media/napco.2465a1648e43a8f443dd.webp",
+    "static/media/shopify.webp": "/static/media/shopify.f918196e4bbf4d594868.webp",
+    "static/media/contestpizz.webp": "/static/media/contestpizz.b957d401e72478a846c5.webp",
+    "static/media/ekologica.webp": "/static/media/ekologica.b31b2a18ed8856632605.webp",
+    "static/media/logoblanco.svg": "/static/media/logoblanco.25f5c2f192ab28e17c965a02c6ae78ae.svg",
+    "static/media/logonegro.svg": "/static/media/logonegro.9df89f977f2ebe6f4985da9516f1eedc.svg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.2014dbdf.css",
+    "static/js/main.9569e8d4.js"
+  ]
+}

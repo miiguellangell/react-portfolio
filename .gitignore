@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+# /build  # Comentado para incluir build en el repo para deploy en servidor sin Node
 
 # misc
 .DS_Store

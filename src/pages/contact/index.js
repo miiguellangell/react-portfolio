@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
@@ -17,44 +16,59 @@ export const ContactUs = () => {
     variant: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata({ ...formData, loading: true });
 
-    const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
+    const formPayload = {
+      name: formData.name,
+      email: formData.email,
       message: formData.message,
     };
 
-    emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormdata({
-            loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
-            variant: "success",
-            show: true,
-          });
+    try {
+      const response = await fetch('https://miguelangel.icu/send-email.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        (error) => {
-          console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
-        }
-      );
+        body: JSON.stringify(formPayload),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setFormdata({
+          ...formData,
+          loading: false,
+          alertmessage: "SUCCESS! Thank you for your message",
+          variant: "success",
+          show: true,
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        setFormdata({
+          ...formData,
+          loading: false,
+          alertmessage: `Failed to send! ${result.error}`,
+          variant: "danger",
+          show: true,
+        });
+        document.getElementsByClassName("co_alert")[0].scrollIntoView();
+      }
+    } catch (error) {
+      console.log(error);
+      setFormdata({
+        ...formData,
+        loading: false,
+        alertmessage: `Failed to send! ${error.message}`,
+        variant: "danger",
+        show: true,
+      });
+      document.getElementsByClassName("co_alert")[0].scrollIntoView();
+    }
   };
 
   const handleChange = (e) => {
@@ -103,7 +117,7 @@ export const ContactUs = () => {
               <br />
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
                 <p>
-                  <strong>Phone:</strong><a href="https://api.whatsapp.com/send?phone=573024228433&text=Hi,%20Miguel%20" target="_blank"> {contactConfig.YOUR_FONE}</a>
+                  <strong>Phone:</strong><a href="https://api.whatsapp.com/send?phone=573024228433&text=Hi,%20Miguel%20" target="_blank" rel="noreferrer"> {contactConfig.YOUR_FONE}</a>
                 </p>
               ) : (
                 ""
