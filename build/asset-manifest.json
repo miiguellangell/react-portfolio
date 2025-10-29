@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2014dbdf.css",
-    "main.js": "/static/js/main.9569e8d4.js",
+    "main.js": "/static/js/main.baa51bfa.js",
     "static/media/profile.webp": "/static/media/profile.ef09e1bd0f7518a364cd.webp",
     "static/media/wow.webp": "/static/media/wow.a3ea31979a650d1de1a4.webp",
     "static/media/havip.webp": "/static/media/havip.cfbc9156d2d351f1f31c.webp",
@@ -21,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.2014dbdf.css",
-    "static/js/main.9569e8d4.js"
+    "static/js/main.baa51bfa.js"
   ]
 }

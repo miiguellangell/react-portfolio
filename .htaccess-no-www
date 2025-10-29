@@ -1,0 +1,46 @@
+# Redirección de www a no-www para evitar problemas CORS
+RewriteEngine On
+RewriteBase /
+
+# Redirigir www.miguelangel.icu a miguelangel.icu
+RewriteCond %{HTTP_HOST} ^www\.miguelangel\.icu$ [NC]
+RewriteRule ^(.*)$ https://miguelangel.icu/$1 [R=301,L]
+
+# React App en dominio principal (manteniendo CMS)
+Options -MultiViews
+
+# No redirigir CMS ni portfolio existente
+RewriteCond %{REQUEST_URI} !^/cms
+RewriteCond %{REQUEST_URI} !^/portfolio
+
+# Reescribir archivos estáticos a la carpeta build
+RewriteRule ^static/(.*)$ build/static/$1 [L]
+
+# Reescribir archivos específicos de build
+RewriteRule ^(manifest\.json|robots\.txt|asset-manifest\.json)$ build/$1 [L]
+
+# React Router redirection para todas las demás rutas
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/static/
+RewriteCond %{REQUEST_URI} !^/(manifest\.json|robots\.txt|asset-manifest\.json)$
+RewriteCond %{REQUEST_URI} !^/cms
+RewriteCond %{REQUEST_URI} !^/portfolio
+RewriteRule ^ build/index.html [L]
+
+# HTTPS opcional
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Cache y compresión
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/* "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>

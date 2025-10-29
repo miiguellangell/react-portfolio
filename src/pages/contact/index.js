@@ -27,7 +27,7 @@ export const ContactUs = () => {
     };
 
     try {
-      const response = await fetch('https://miguelangel.icu/send-email.php', {
+      const response = await fetch('/send-email.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

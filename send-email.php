@@ -2,11 +2,12 @@
 // Debug para verificar que el archivo se está ejecutando
 error_log("send-email.php ejecutándose");
 
-// Headers CORS y content type
+// Headers CORS y content type más completos
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Origin: https://www.miguelangel.icu');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Allow-Headers: Content-Type, Accept, Origin');
+header('Access-Control-Allow-Credentials: true');
 
 // Manejar preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
